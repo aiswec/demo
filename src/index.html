@@ -13,6 +13,19 @@
   <body>
     <main>
       <h1 id="greeting"></h1>
+      <section>
+        <label>Bill total <input id="bill" type="number" min="0" step="0.01" placeholder="0.00" /></label>
+        <label>
+          Tip
+          <select id="tip-percent">
+            <option value="10">10%</option>
+            <option value="15" selected>15%</option>
+            <option value="20">20%</option>
+          </select>
+        </label>
+        <p>Tip: <span id="tip-amount">$0.00</span></p>
+        <p>Total: <span id="total-amount">$0.00</span></p>
+      </section>
       <p>The first page of a project built with AISWEC. Ask for the next one in plain words.</p>
     </main>
     <script type="module" src="./main.ts"></script>
