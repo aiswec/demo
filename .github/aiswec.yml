@@ -13,3 +13,5 @@ preview:
   web:
     command: bun run build
     dir: dist
+  # A public example: anyone with the link may open a change's preview.
+  access: link
