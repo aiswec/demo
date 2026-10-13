@@ -1,0 +1,9 @@
+{
+  "name": "aiswec-project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./src/index.html --outdir dist",
+    "test": "bun test"
+  }
+}

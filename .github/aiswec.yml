@@ -1,0 +1,15 @@
+# How aiswec behaves in this repository. Every stage reads this file when it
+# starts; Suite edits it from the project's Settings page, and the next run
+# picks the change up. `maintainers` (who may ask, approve and instruct aiswec)
+# is written when the project is set up.
+advance:
+  build: approval
+runtime:
+  setup: bun
+gates:
+  - bun test
+# Each change is built as a site of its own, opened from the task in Suite.
+preview:
+  web:
+    command: bun run build
+    dir: dist
