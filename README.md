@@ -12,7 +12,7 @@ request, with nothing edited after the fact.
    and the maintainer merged.
 
 Everything written by `aiswec[bot]` here was written by AISWEC. The workflows that ran are open
-source, at [aiswec/core](https://github.com/aiswec/core).
+source, at [aiswec/agent](https://github.com/aiswec/agent).
 
 ## The project
 

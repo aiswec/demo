@@ -1,6 +1,6 @@
 name: aiswec Revise
 
-# aiswec's revise stage, called from aiswec/core, the open source repository, at its released
+# aiswec's revise stage, called from aiswec/agent, the open source repository, at its released
 # `v2`: a fix there reaches this repository with no commit here. This stub is
 # only triggers, permissions, concurrency, secrets and the namespace;
 # everything about how aiswec behaves (who may ask, model, effort, budgets,
@@ -44,7 +44,7 @@ concurrency:
 jobs:
   revise:
     if: github.event_name == 'workflow_dispatch' || !endsWith(github.actor, '[bot]')
-    uses: aiswec/core/.github/workflows/stage-revise.yml@v2
+    uses: aiswec/agent/.github/workflows/stage-revise.yml@v2
     secrets:
       claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       openrouter_api_key: ${{ secrets.OPENROUTER_API_KEY }}
